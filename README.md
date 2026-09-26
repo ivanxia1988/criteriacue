@@ -10,7 +10,7 @@ An English introduction to CriteriaCue, with a four-step illustrated tour, three
 - `assets/`: approved fictional/simulated product screenshots and their provenance.
 - `.nojekyll`: serves the directory as plain static files on GitHub Pages.
 
-The extension is described as coming soon until public store availability is verified. Screenshot captions disclose simulated data. The page does not imply platform endorsement or include real candidate information.
+Public store availability was verified on 2026-09-26. The installation buttons link to the live Chrome Web Store listing; initial distribution is the United States. Screenshot captions disclose simulated data. The page does not imply platform endorsement or include real candidate information.
 
 ## Preview
 
@@ -38,7 +38,9 @@ The prepared `assets/tour-en.vtt` matches the proposed 60-second storyboard. Ret
 
 ## Launch update
 
-After Chrome Web Store approval **and manual publication**, verify the public listing first. Replace the coming-soon text in `index.html` with an installation link copied from that live listing, and update the first setup step. Do not use the private developer dashboard as the installation URL. Check the distribution countries before promoting outside the launch region.
+Installation URL: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
+
+Keep this link synchronized with the live listing. The landing page is also the extension homepage in v0.2.8. Check distribution countries before promoting outside the launch region.
 
 ## Project hosting
 
