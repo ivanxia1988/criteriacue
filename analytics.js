@@ -41,7 +41,8 @@
     if (event.event === "store_install_click" && ["hero", "footer"].includes(event.properties?.placement)) {
       clean.placement = event.properties.placement;
     }
-    event.properties = { ...clean, ...properties, $process_person_profile: false, $geoip_disable: true };
+    // The public ingestion token is required by PostHog, not visitor-supplied data.
+    event.properties = { ...clean, ...properties, token: config.projectToken, $process_person_profile: false, $geoip_disable: true };
     return event;
   }
   function capture(name, extra = {}) {
@@ -61,7 +62,7 @@
     capture_dead_clicks: false, capture_heatmaps: false, capture_performance: false,
     capture_exceptions: false, disable_session_recording: true, disable_surveys: true,
     advanced_disable_flags: true, respect_dnt: true, before_send: beforeSend,
-    loaded: () => capture("$pageview"),
+    loaded: (client) => client.capture("$pageview", properties),
   });
 
   function loadPostHog() {
