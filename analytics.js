@@ -35,7 +35,8 @@
   function beforeSend(event) {
     if (!event || !["$pageview", "store_install_click"].includes(event.event)) return null;
     const clean = {};
-    for (const key of ["distinct_id", "$device_id", "$session_id", "$window_id", "$lib", "$lib_version", "$browser", "$browser_version", "$os", "$os_version", "$device_type", "$cookieless_mode"]) {
+    // Cookieless ingestion requires the user agent to hash identity, then strips it server-side.
+    for (const key of ["distinct_id", "$device_id", "$session_id", "$window_id", "$lib", "$lib_version", "$browser", "$browser_version", "$os", "$os_version", "$device_type", "$cookieless_mode", "$raw_user_agent"]) {
       if (event.properties?.[key] !== undefined) clean[key] = event.properties[key];
     }
     if (event.event === "store_install_click" && ["hero", "footer"].includes(event.properties?.placement)) {
