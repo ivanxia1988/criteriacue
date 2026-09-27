@@ -1,5 +1,5 @@
 // Only configure a video once the asset has been prepared and playback verified.
-const videoSource = "assets/criteriacue-tour.mp4";
+const videoSource = "assets/criteriacue-evidence-20260927.mp4";
 
 if (videoSource) {
   const video = document.querySelector("#product-video");

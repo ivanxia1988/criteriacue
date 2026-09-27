@@ -25,19 +25,13 @@ python3 -m http.server 4187 --bind 127.0.0.1
 
 Open http://127.0.0.1:4187/ in a browser. No npm install is required. Clipboard support depends on a secure context and browser permissions; when unavailable, the text is selected for manual copying.
 
-## Optional video
+## Product film
 
-The site includes a 60-second silent English screenshot-based interface introduction at `assets/criteriacue-tour.mp4` (1280×720, H.264, 24 fps), with matching captions and a complete image walkthrough below it. The file is bundled for same-origin playback. Clear `videoSource` to hide the video if replacing it; do not point to a nonexistent asset.
+The current player serves `assets/criteriacue-evidence-20260927.mp4`: a 30-second English motion film, 1920×1080, H.264 at 30 fps, AAC sound, approximately 3 MB. It replaces the earlier 60-second screenshot tour. The versioned poster and captions are `evidence-poster-20260927.png` and `evidence-en-20260927.vtt`.
 
-For a small MP4, place the reviewed file at `assets/criteriacue-tour.mp4` and set:
+The film connects a criterion to its fictional source excerpt, expands it into a simplified review panel, and folds that panel into the product mark. Simulated data is labelled throughout. It does not show live inference, measured latency, accuracy, or a candidate score. Sound is user-initiated; the player does not autoplay. English captions work without sound. The illustrated walkthrough remains below the player.
 
-```js
-const videoSource = "assets/criteriacue-tour.mp4";
-```
-
-For a release-hosted video, upload the MP4 as a GitHub Release asset and use its actual download URL. Verify playback and seeking after deployment before using this route. GitHub Releases is an asset distribution feature, not a streaming-video guarantee; browser behavior and response headers matter. If playback fails, keep the illustrated walkthrough and use a tested small same-origin MP4 or a suitable video host.
-
-The prepared `assets/tour-en.vtt` matches the proposed 60-second storyboard. Retiming the video requires updating this caption file. Keep the silent/simulated-demo label visible. Do not autoplay with sound.
+Authored and rendered using OneTake. Source composition and production checks are kept locally in `docs/launch/onetake-promo/`; only delivery media is hosted here. The former video assets remain unlinked for rollback. Update the video, poster, captions and player description together when replacing the film. Verify playback and seeking on the deployed page.
 
 ## Launch update
 

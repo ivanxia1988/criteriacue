@@ -6,5 +6,18 @@
   "source": "Actual packaged UI rendered in isolated Chrome with fictional fixtures and mocked API responses",
   "liveInference": false,
   "realCandidateData": false,
-  "externalTypeSafeRequests": 0
+  "externalTypeSafeRequests": 0,
+  "video": {
+    "file": "criteriacue-evidence-20260927.mp4",
+    "generatedAt": "2026-09-27",
+    "tool": "OneTake",
+    "durationSeconds": 30,
+    "dimensions": "1920x1080",
+    "fps": 30,
+    "source": "Deterministic motion composition with a simplified UI and existing fictional screenshot excerpt",
+    "realCandidateData": false,
+    "liveInference": false,
+    "audio": "Original synthesized sound and harmonic bed",
+    "sha256": "f1e6aa988f3ca7f07eacb2e72e766a890862b59157e8b052672918c91ead15a3"
+  }
 }
