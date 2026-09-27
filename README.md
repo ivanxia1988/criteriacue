@@ -27,9 +27,9 @@ Open http://127.0.0.1:4187/ in a browser. No npm install is required. Clipboard 
 
 ## Product film
 
-The current player serves `assets/criteriacue-evidence-20260927.mp4`: a 30-second English motion film, 1920×1080, H.264 at 30 fps, AAC sound, approximately 3 MB. It replaces the earlier 60-second screenshot tour. The versioned poster and captions are `evidence-poster-20260927.png` and `evidence-en-20260927.vtt`.
+The current player serves `assets/criteriacue-evidence-20260927-v2.mp4`: a 30-second English motion film, 1920×1080, H.264 at 30 fps, AAC sound, approximately 3.3 MB. It replaces the earlier 60-second screenshot tour. The versioned poster and captions are `evidence-poster-20260927.png` and `evidence-en-20260927.vtt`.
 
-The film connects a criterion to its fictional source excerpt, expands it into a simplified review panel, and folds that panel into the product mark. Simulated data is labelled throughout. It does not show live inference, measured latency, accuracy, or a candidate score. Sound is user-initiated; the player does not autoplay. English captions work without sound. The illustrated walkthrough remains below the player.
+The film connects a criterion to its fictional source excerpt, expands it into a simplified review panel, and folds that panel into the product mark. Simulated data is labelled throughout. It does not show live inference, measured latency, accuracy, or a candidate score. The revised soundtrack is an original 128 BPM electronic arrangement with drums, bass, a melodic motif, a breakdown and motion-synchronized effects. The approved picture stream is unchanged. Sound is user-initiated; the player does not autoplay. English captions work without sound. The illustrated walkthrough remains below the player.
 
 Authored and rendered using OneTake. Source composition and production checks are kept locally in `docs/launch/onetake-promo/`; only delivery media is hosted here. The former video assets remain unlinked for rollback. Update the video, poster, captions and player description together when replacing the film. Verify playback and seeking on the deployed page.
 

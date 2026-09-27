@@ -8,7 +8,7 @@
   "realCandidateData": false,
   "externalTypeSafeRequests": 0,
   "video": {
-    "file": "criteriacue-evidence-20260927.mp4",
+    "file": "criteriacue-evidence-20260927-v2.mp4",
     "generatedAt": "2026-09-27",
     "tool": "OneTake",
     "durationSeconds": 30,
@@ -17,7 +17,9 @@
     "source": "Deterministic motion composition with a simplified UI and existing fictional screenshot excerpt",
     "realCandidateData": false,
     "liveInference": false,
-    "audio": "Original synthesized sound and harmonic bed",
-    "sha256": "f1e6aa988f3ca7f07eacb2e72e766a890862b59157e8b052672918c91ead15a3"
+    "audio": "Original 128 BPM electronic arrangement with synthesized drums, bass, chord plucks, melody and motion-synchronized OneTake effects",
+    "sha256": "47872c5f0b92b9e790e4cdd45bd13693d38ddd5398b1e7325cafb80e8495f10e",
+    "revision": 2,
+    "visualsUnchangedFrom": "criteriacue-evidence-20260927.mp4"
   }
 }
