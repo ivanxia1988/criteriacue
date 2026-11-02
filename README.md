@@ -18,7 +18,8 @@ Checked 2026-11-02. Re-check store availability before changing these labels.
 
 1. Chrome Web Store: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
    The public listing currently serves the earlier 0.2.9 release. A V2 submission record does not mean V2 is publicly available.
-2. Latest unpacked V2 preview: https://github.com/ivanxia1988/criteriacue/releases/download/v0.2.39-preview/criteriacue-test-v0.2.39.zip
+2. Latest unpacked V2 preview: https://ivanxia1988.github.io/criteriacue/downloads/criteriacue-test-v0.2.39.zip
+   GitHub Release mirror: https://github.com/ivanxia1988/criteriacue/releases/download/v0.2.39-preview/criteriacue-test-v0.2.39.zip
    Package 0.2.39, 420451 bytes. SHA-256: 47ed38039f2653379c7c871930ba00b578252b2a53b6d4984a2717f4ce228d53. Release notes: https://github.com/ivanxia1988/criteriacue/releases/tag/v0.2.39-preview
 3. Edge: the page links to the manual-install guide, not an invented store listing. Edge Add-ons publication is pending. The guide describes how to try the same unpacked preview; full Edge workflow validation has not been claimed.
 
@@ -31,6 +32,7 @@ The ZIP requires extraction and Developer mode. It still needs an internet conne
 - site.js: local clipboard action with manual fallback; optional video loading.
 - analytics-config.js / analytics.js: existing approved website analytics.
 - website-privacy.html: website analytics notice, separate from extension privacy.
+- downloads/: the explicitly authorized compiled V2 preview ZIP, byte-identical to the release asset.
 - assets/: approved media. Historical screenshots remain stored but are no longer presented as current V2 screenshots.
 - .nojekyll: plain static GitHub Pages.
 
@@ -50,7 +52,7 @@ Do not replace the film or imply that simulated footage proves accuracy, latency
 
 ## Hosting and publication
 
-Repository: ivanxia1988/criteriacue. Publish only the intended website files from this directory; preserve unrelated remote files. The separately authorized compiled preview ZIP is a GitHub Release asset. Do not publish the extension workspace, raw source, server code, private reports, account data, credentials or candidate material.
+Repository: ivanxia1988/criteriacue. Publish only the intended website files from this directory; preserve unrelated remote files. The separately authorized compiled preview ZIP is hosted under downloads/ and as a GitHub Release mirror. Only that reviewed ZIP is published, not the release/ directory. Do not publish the extension workspace, raw source, server code, private reports, account data, credentials or candidate material.
 
 A public website and a downloadable compiled preview do not imply the extension source is open source. Privacy policy: https://ivanxia1988.github.io/criteriacue-privacy/
 
