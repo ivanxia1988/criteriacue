@@ -2,7 +2,7 @@
 
 Public English website: https://ivanxia1988.github.io/criteriacue/
 
-Updated 2026-11-02 for the V2 preview (extension 0.2.39). Plain HTML/CSS/JavaScript on the existing GitHub Pages repository. The page describes the preview workflow separately from the older public store release.
+Updated 2026-11-02 for the published V2 Edge release (0.2.39), Chrome release (0.2.29), and unpacked preview (0.2.39). Plain HTML/CSS/JavaScript on the existing GitHub Pages repository. Store and preview versions are listed separately.
 
 ## Current product description
 
@@ -17,11 +17,14 @@ Updated 2026-11-02 for the V2 preview (extension 0.2.39). Plain HTML/CSS/JavaScr
 Checked 2026-11-02. Re-check store availability before changing these labels.
 
 1. Chrome Web Store: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
-   The public listing currently serves the earlier 0.2.9 release. A V2 submission record does not mean V2 is publicly available.
+   The official public listing currently serves 0.2.29. The latest 0.2.39 package is available from Edge or the ZIP preview; do not assume both stores always serve the same version.
 2. Latest unpacked V2 preview: https://ivanxia1988.github.io/criteriacue/downloads/criteriacue-test-v0.2.39.zip
    GitHub Release mirror: https://github.com/ivanxia1988/criteriacue/releases/download/v0.2.39-preview/criteriacue-test-v0.2.39.zip
    Package 0.2.39, 420451 bytes. SHA-256: 47ed38039f2653379c7c871930ba00b578252b2a53b6d4984a2717f4ce228d53. Release notes: https://github.com/ivanxia1988/criteriacue/releases/tag/v0.2.39-preview
-3. Edge: the page links to the manual-install guide, not an invented store listing. Edge Add-ons publication is pending. The guide describes how to try the same unpacked preview; full Edge workflow validation has not been claimed.
+3. Microsoft Edge Add-ons: https://microsoftedge.microsoft.com/addons/detail/aecndleilbgafmfclfjiilafoaaekfoc
+   Public version 0.2.39, visually confirmed on the official store page. Open in desktop Edge to install without Developer mode. Full Edge workflow validation has not been claimed.
+
+The maintained Chinese download document is `docs/launch/downloads.md` in the extension workspace. Hero, download cards and footer link directly to both stores and the reviewed ZIP. The Edge setup section describes store installation; the ZIP guide covers manual installation in both browsers.
 
 The ZIP requires extraction and Developer mode. It still needs an internet connection and email sign-in. Preview updates are manual: replace the files in the same installation folder and reload. Store and preview installations have separate local data and sign-in. The stable preview identity is iolkljnhkdblmpoohjfkkhmkalfaknlf.
 
@@ -58,7 +61,7 @@ A public website and a downloadable compiled preview do not imply the extension 
 
 ## Existing analytics scope
 
-Reuse Minus / Default US project 597344. Do not create a new project or alter the public ingestion configuration. Existing events remain $pageview and store_install_click, site = criteriacue_landing, with hero/footer Chrome store placements. The new ZIP links and Edge setup links do not add events or properties. A store click is not an installation; no cross-channel installation attribution is implied.
+Reuse Minus / Default US project 597344. Do not create a new project or alter the public ingestion configuration. Existing events remain $pageview and store_install_click, site = criteriacue_landing, with hero/footer Chrome store placements. ZIP and Edge store links do not add events or properties. A store click is not an installation; no cross-channel installation attribution is implied.
 
 Cookieless statistics, DNT/GPC handling and the production-host allowlist remain. No replay, autocapture, profiles, heatmaps, error collection, JD input capture or persistent identity is added. No analytics on local previews or the privacy page.
 
