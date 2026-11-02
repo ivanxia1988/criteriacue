@@ -1,77 +1,65 @@
 # CriteriaCue project website
 
-An English introduction to CriteriaCue, with a four-step illustrated tour, three editable role-criteria templates, setup guidance, support and privacy links. Plain HTML/CSS/JavaScript; no build step, account system or form backend. Website-only PostHog analytics is configured for the existing Minus / Default project (US Cloud, project 597344), as approved by the owner on 2026-09-26.
+Public English website: https://ivanxia1988.github.io/criteriacue/
 
-## Contents
+Updated 2026-11-02 for the V2 preview (extension 0.2.39). Plain HTML/CSS/JavaScript on the existing GitHub Pages repository. The page describes the preview workflow separately from the older public store release.
 
-- `index.html`: introduction, illustrated tour, templates, setup and FAQ.
-- `styles.css`: desktop and mobile presentation.
-- `site.js`: local clipboard action, with manual-copy fallback; optional video loading.
-- `analytics-config.js`: verified public PostHog ingestion token and regional host; empty means disabled.
-- `analytics.js`: cookieless pageviews and explicit store-link clicks, with a strict event/property allowlist.
-- `website-privacy.html`: website analytics notice, separate from the extension privacy policy.
-- `assets/`: approved fictional/simulated product screenshots and their provenance.
-- `.nojekyll`: serves the directory as plain static files on GitHub Pages.
+## Current product description
 
-Public store availability was verified on 2026-09-26. The installation buttons link to the live Chrome Web Store listing; initial distribution is the United States. Screenshot captions disclose simulated data. The page does not imply platform endorsement or include real candidate information.
+- English and Simplified Chinese; authorized individual LinkedIn profiles and Chenglietong resume details.
+- Paste a JD, edit the extracted title and core requirements, then save. Up to 30 local roles, 1–3 active at once, 1–10 requirements each.
+- Quick requirement checks prioritize the first active role. Detailed analysis provides an advisory recommendation score, strengths, gaps and verification questions. The score is not a calibrated probability; no automatic candidate ranking, rejection, hiring or contact.
+- V2 uses email-code registration/sign-in and a currently free platform service with service limits. No user API-key configuration.
+- Roles, JDs and preferences stay local; AI processing passes through the platform. The application database stores accounts and task metadata, not candidate/JD/output bodies. See the separate extension privacy policy for providers and retention.
 
-## Preview
+## Downloads
 
-From this directory:
+Checked 2026-11-02. Re-check store availability before changing these labels.
 
-```sh
-python3 -m http.server 4187 --bind 127.0.0.1
-```
+1. Chrome Web Store: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
+   The public listing currently serves the earlier 0.2.9 release. A V2 submission record does not mean V2 is publicly available.
+2. Latest unpacked V2 preview: https://github.com/ivanxia1988/criteriacue/releases/download/v0.2.39-preview/criteriacue-test-v0.2.39.zip
+   Package 0.2.39, 420451 bytes. SHA-256: 47ed38039f2653379c7c871930ba00b578252b2a53b6d4984a2717f4ce228d53. Release notes: https://github.com/ivanxia1988/criteriacue/releases/tag/v0.2.39-preview
+3. Edge: the page links to the manual-install guide, not an invented store listing. Edge Add-ons publication is pending. The guide describes how to try the same unpacked preview; full Edge workflow validation has not been claimed.
 
-Open http://127.0.0.1:4187/ in a browser. No npm install is required. Clipboard support depends on a secure context and browser permissions; when unavailable, the text is selected for manual copying.
+The ZIP requires extraction and Developer mode. It still needs an internet connection and email sign-in. Preview updates are manual: replace the files in the same installation folder and reload. Store and preview installations have separate local data and sign-in. The stable preview identity is iolkljnhkdblmpoohjfkkhmkalfaknlf.
 
-## Product film
+## Contents and preview
 
-The current player serves `assets/criteriacue-evidence-20260927-v2.mp4`: a 30-second English motion film, 1920×1080, H.264 at 30 fps, AAC sound, approximately 3.3 MB. It replaces the earlier 60-second screenshot tour. The versioned poster and captions are `evidence-poster-20260927.png` and `evidence-en-20260927.vtt`.
+- index.html: V2 introduction, three download choices, installation guides, four workflow illustrations, fictional JD starters, setup and FAQ.
+- styles.css: existing desktop/mobile design plus download cards and illustrations.
+- site.js: local clipboard action with manual fallback; optional video loading.
+- analytics-config.js / analytics.js: existing approved website analytics.
+- website-privacy.html: website analytics notice, separate from extension privacy.
+- assets/: approved media. Historical screenshots remain stored but are no longer presented as current V2 screenshots.
+- .nojekyll: plain static GitHub Pages.
 
-The film connects a criterion to its fictional source excerpt, expands it into a simplified review panel, and folds that panel into the product mark. Simulated data is labelled throughout. It does not show live inference, measured latency, accuracy, or a candidate score. The revised soundtrack is an original 128 BPM electronic arrangement with drums, bass, a melodic motif, a breakdown and motion-synchronized effects. The approved picture stream is unchanged. Sound is user-initiated; the player does not autoplay. English captions work without sound. The illustrated walkthrough remains below the player.
+From the extension workspace:
 
-Authored and rendered using OneTake. Source composition and production checks are kept locally in `docs/launch/onetake-promo/`; only delivery media is hosted here. The former video assets remain unlinked for rollback. Update the video, poster, captions and player description together when replacing the film. Verify playback and seeking on the deployed page.
+~~~sh
+python3 -m http.server 49189 --bind 127.0.0.1 --directory docs/launch/promo-site
+~~~
 
-## Launch update
+Open http://127.0.0.1:49189/ . Local previews do not send analytics. Nothing typed into the public fictional JD examples is saved or sent; copying is local.
 
-Installation URL: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
+## Retained concept film
 
-Keep this link synchronized with the live listing. The landing page is also the extension homepage in v0.2.8. Check distribution countries before promoting outside the launch region.
+Keep the approved 30-second English film assets/criteriacue-evidence-20260927-v2.mp4, its evidence-poster-20260927.png poster and evidence-en-20260927.vtt captions. It is now explicitly labeled an earlier concept film from the original Jev experiment, not the current V2 interface or live inference. All examples are fictional. Sound and playback remain user initiated.
 
-## Project hosting
+Do not replace the film or imply that simulated footage proves accuracy, latency or time savings. New V2 workflow illustrations are HTML diagrams, not product screenshots.
 
-Publish only this directory to the root of a dedicated website repository. Enable Pages from `main` / `/ (root)`. Creating a GitHub Release is optional and is not required to enable Pages.
+## Hosting and publication
 
-A project website uses `https://USERNAME.github.io/REPOSITORY/`, not the repository's `https://github.com/USERNAME/REPOSITORY/` URL. Relative paths in this website support a project subpath.
+Repository: ivanxia1988/criteriacue. Publish only the intended website files from this directory; preserve unrelated remote files. The separately authorized compiled preview ZIP is a GitHub Release asset. Do not publish the extension workspace, raw source, server code, private reports, account data, credentials or candidate material.
 
-The existing privacy policy remains at https://ivanxia1988.github.io/criteriacue-privacy/ .
+A public website and a downloadable compiled preview do not imply the extension source is open source. Privacy policy: https://ivanxia1988.github.io/criteriacue-privacy/
 
-References:
-- https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
-- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-- https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
+## Existing analytics scope
+
+Reuse Minus / Default US project 597344. Do not create a new project or alter the public ingestion configuration. Existing events remain $pageview and store_install_click, site = criteriacue_landing, with hero/footer Chrome store placements. The new ZIP links and Edge setup links do not add events or properties. A store click is not an installation; no cross-channel installation attribution is implied.
+
+Cookieless statistics, DNT/GPC handling and the production-host allowlist remain. No replay, autocapture, profiles, heatmaps, error collection, JD input capture or persistent identity is added. No analytics on local previews or the privacy page.
+
+Before publication: npm test -- tests/promo-content.test.ts tests/promo-analytics.test.ts. CUA visual checks cover layout, in-page navigation, copy feedback and browser download behavior; HTTP/hash checks are separately reported.
 
 Operator: minus · support@minus.team
-
-## PostHog activation and reporting
-
-Cookieless tracking is enabled in project 597344. The existing public ingestion token and US host are set in `analytics-config.js`; no new project or paid upgrade was created. If moving projects, enable cookieless tracking in the destination before updating these values. Use only the public project ingestion token, never a personal API key. Verify the project region; allowed hosts are `https://us.i.posthog.com` and `https://eu.i.posthog.com`.
-
-Analytics runs only on the production landing page. Local previews and the privacy page send nothing. The official loader is from https://posthog.com/docs/integrate . The configuration follows https://posthog.com/docs/libraries/js/config . Browser DNT/GPC signals skip initialization. Replay, autocapture, profiles, heatmaps, errors and geographic enrichment are disabled. Do not turn them on as part of routine marketing work.
-
-Measure `$pageview` (views and estimated visitors) and `store_install_click` (store-link clicks), always filtered to `site = criteriacue_landing`. Break down by `utm_source`; click placement is `hero` or `footer`. A click is not an installation. Do not claim actual extension usage, retention, or installations from these events. Without page-leave capture, do not use duration or bounce metrics as a success measure. Cookieless visitor counts are estimates rather than verified people or long-term identities.
-
-Ready-to-use campaign links:
-
-- LinkedIn: https://ivanxia1988.github.io/criteriacue/?utm_source=linkedin&utm_medium=social&utm_campaign=launch
-- Discord: https://ivanxia1988.github.io/criteriacue/?utm_source=discord&utm_medium=community&utm_campaign=launch
-- Reddit: https://ivanxia1988.github.io/criteriacue/?utm_source=reddit&utm_medium=community&utm_campaign=launch
-
-Source allowlist: linkedin, discord, reddit, github, brainfood, producthunt. Medium allowlist: social, community, referral. Campaign allowlist: launch, jev_demo. Other values are discarded. Never place email addresses or personal identifiers in campaign parameters.
-
-Before publishing, run `npm test -- tests/promo-analytics.test.ts` from the extension workspace and verify a real browser visit and store-link click in PostHog after deployment. Check the browser events in the project activity view. Data starts at activation; past traffic cannot be reconstructed.
-
-PostHog project: https://us.posthog.com/project/597344/web
-
-To separate websites in Web analytics, filter Current URL to `https://ivanxia1988.github.io/criteriacue/`, or use event property `site = criteriacue_landing` in Product analytics. Shared project totals include both sites.

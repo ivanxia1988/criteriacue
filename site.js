@@ -16,7 +16,7 @@ for (const button of document.querySelectorAll("[data-copy]")) {
     const status = document.querySelector("#copy-status");
     try {
       await navigator.clipboard.writeText(template.value);
-      status.textContent = "Template copied. Adapt and confirm each criterion in CriteriaCue Setup.";
+      status.textContent = "JD starter copied. Adapt it to your opening, paste it into V2, then edit and confirm the extracted requirements.";
     } catch {
       template.focus();
       template.select();
