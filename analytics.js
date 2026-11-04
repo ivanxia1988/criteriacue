@@ -1,9 +1,9 @@
 (() => {
   const config = window.CRITERIACUE_ANALYTICS;
   const page = window.location;
-  const siteUrl = "https://ivanxia1988.github.io/criteriacue/";
-  if (page.origin !== "https://ivanxia1988.github.io" ||
-      !["/criteriacue/", "/criteriacue/index.html"].includes(page.pathname) ||
+  const siteUrl = "https://criteriacue.minus.team/";
+  if (page.origin !== "https://criteriacue.minus.team" ||
+      !["/", "/index.html"].includes(page.pathname) ||
       !config?.projectToken || !/^phc_[A-Za-z0-9_]+$/.test(config.projectToken) ||
       !["https://us.i.posthog.com", "https://eu.i.posthog.com"].includes(config.apiHost) ||
       navigator.doNotTrack === "1" || navigator.globalPrivacyControl === true) return;
@@ -25,8 +25,8 @@
   const source = query.get("utm_source");
   if (channels.includes(source)) channel = source;
   const properties = {
-    site: "criteriacue_landing", $current_url: siteUrl, $pathname: "/criteriacue/",
-    $host: "ivanxia1988.github.io", $referrer: referrer,
+    site: "criteriacue_landing", $current_url: siteUrl, $pathname: "/",
+    $host: "criteriacue.minus.team", $referrer: referrer,
     $referring_domain: referrer ? new URL(referrer).hostname : "",
     utm_source: channel,
     utm_medium: ["social", "community", "referral"].includes(query.get("utm_medium")) ? query.get("utm_medium") : "",

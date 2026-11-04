@@ -1,6 +1,6 @@
 # CriteriaCue project website
 
-Public English website: https://ivanxia1988.github.io/criteriacue/
+Public English website: https://criteriacue.minus.team/
 
 Updated 2026-11-02 for the published V2 Edge release (0.2.39), Chrome release (0.2.29), and unpacked preview (0.2.39). Plain HTML/CSS/JavaScript on the existing GitHub Pages repository. Store and preview versions are listed separately.
 
@@ -18,7 +18,7 @@ Checked 2026-11-02. Re-check store availability before changing these labels.
 
 1. Chrome Web Store: https://chromewebstore.google.com/detail/criteriacue-%E2%80%94-jev-native/gnbphmdpnhlbakiaegfgmppnajemboij
    The official public listing currently serves 0.2.29. The latest 0.2.39 package is available from Edge or the ZIP preview; do not assume both stores always serve the same version.
-2. Latest unpacked V2 preview: https://ivanxia1988.github.io/criteriacue/downloads/criteriacue-test-v0.2.39.zip
+2. Latest unpacked V2 preview: https://criteriacue.minus.team/downloads/criteriacue-test-v0.2.39.zip
    GitHub Release mirror: https://github.com/ivanxia1988/criteriacue/releases/download/v0.2.39-preview/criteriacue-test-v0.2.39.zip
    Package 0.2.39, 420451 bytes. SHA-256: 47ed38039f2653379c7c871930ba00b578252b2a53b6d4984a2717f4ce228d53. Release notes: https://github.com/ivanxia1988/criteriacue/releases/tag/v0.2.39-preview
 3. Microsoft Edge Add-ons: https://microsoftedge.microsoft.com/addons/detail/aecndleilbgafmfclfjiilafoaaekfoc
