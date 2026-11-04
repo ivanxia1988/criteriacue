@@ -2,6 +2,19 @@
 
 /* V2 download choices and fictional workflow illustrations. */
 .hero-copy{min-width:0}
+.hero{padding-block:44px 60px}
+.hero h1{font-size:clamp(38px,3.45vw,48px);letter-spacing:-2px;line-height:1.1;margin-bottom:20px}
+.hero .eyebrow{margin-bottom:22px}
+.hero .lead{margin-bottom:12px}
+.hero .intro{margin-bottom:24px}
+.hero .availability{font-size:14px;font-weight:700;color:#276246;margin-top:18px}
+.hero .availability .dot{background:#4b9270}
+.hero .fine{font-size:12px}
+.panel-preview{padding:22px}
+.panel-preview .visual-top{font-size:8px;margin-bottom:18px;padding-bottom:15px}
+.panel-preview>img{display:block;width:auto;max-width:100%;height:auto;max-height:490px;margin-inline:auto;border:1px solid #d8dfd4;border-radius:8px}
+.closing .fine{margin-top:18px}
+.faq>h3{grid-row:span 6}
 .hero .actions{align-items:stretch;gap:12px}
 .hero .actions .button{max-width:100%;min-width:0;gap:13px}
 .hero .actions .text-link{align-self:center;padding-block:10px;overflow-wrap:anywhere}
@@ -54,3 +67,8 @@
 @media(max-width:1000px){.download-grid{grid-template-columns:minmax(0,1fr);gap:16px}.download-card{padding:25px}.download-card .button{max-width:360px}.download-card>p:not(.download-label):not(.download-meta){max-width:680px}.workflow-visual{padding:24px;min-height:260px}}
 @media(max-width:760px){.download-card{padding:24px}.download-card h3{font-size:24px}.install-guide{padding-inline:20px}.workflow-visual{min-height:260px}.header nav{flex-wrap:wrap}.mock-row{font-size:12px}.hero .actions .text-link{font-size:12px}}
 @media(max-width:420px){.hero .actions{gap:10px}.hero .actions .button{width:100%;padding-inline:16px}.hero .actions .text-link{padding-block:4px}.release-note{font-size:10px;padding-left:11px}.download-card{padding:21px 18px}.download-card h3{font-size:23px}.download-card .button{padding-inline:15px;font-size:12px}.install-guide{padding-inline:16px}.install-guide summary{font-size:13px;padding-block:16px}.install-guide li{font-size:12px}.install-guide code{font-size:10px}.workflow-visual{padding:21px 18px;gap:11px;min-height:250px}.mock-heading{font-size:18px}.mock-row{padding:10px;gap:10px;font-size:11px}.mock-state{padding:3px 6px;font-size:9px}.mock-tabs span{padding:4px 7px;font-size:9px}.mock-note{font-size:9px}.mock-score{font-size:13px}}
+
+/* Current two-level review and preferred-item explanation. */
+.decision-section{padding-bottom:36px}.decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.decision-grid article{padding:30px 26px;border:1px solid #dce2df;border-radius:14px;background:#fff}.feature-index{font-size:10px;font-weight:700;letter-spacing:1.2px;color:#64718a}.decision-grid h3{font-size:25px;line-height:1.2;letter-spacing:-.6px;margin:22px 0 18px}.decision-grid p{font-size:14px;line-height:1.8;color:#526078}.decision-grid .feature-note{font-size:12px}.state-key{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:17px}.state-key span,.preferred-example{font-size:11px;font-weight:650;padding:6px 9px;border-radius:6px}.match{background:#e6f4ec;color:#267654}.partial{background:#fff3d8;color:#926214}.no-match{background:#fde9e9;color:#a7343a}.preferred-feature{position:relative;overflow:hidden}.preferred-example{display:inline-block;background:#fff3cd;color:#79561a}.preferred-example>span{font-size:16px;margin-right:6px}.decision-grid article:nth-child(3){background:#f1eefc;border-color:#dfd8f6}.hero .lead{font-weight:600;color:#5d45db}.tour-grid figure{scroll-margin-top:30px}
+@media(max-width:1000px){.decision-grid{grid-template-columns:1fr}.decision-grid article{padding:26px}.decision-grid h3{margin-top:14px}.decision-grid p{max-width:700px}}
+@media(max-width:420px){.decision-grid article{padding:23px 20px}.decision-grid h3{font-size:24px}.decision-grid p{font-size:13px}}
