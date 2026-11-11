@@ -1,8 +1,8 @@
 # CriteriaCue public website
 
-Current content and artwork: 2026-11-05, interface v0.2.51. LinkedIn-focused English positioning follows the confirmed SEO plan.
+Current content: 2026-11-11, manual preview v0.2.64. Retained artwork: interface v0.2.51. LinkedIn-focused English positioning follows the confirmed SEO plan.
 
-Includes editable required/preferred criteria, three quick states, selected-role deep-analysis preloading, advisory completed-report scores, and current manual preview v0.2.51. Official store links always point to the latest approved store release; preview availability is not evidence of store approval.
+Includes editable required/preferred criteria, three quick states, selected-role deep-analysis preloading, advisory completed-report scores, and current manual preview v0.2.64, including Maimai (脉脉) and BOSS Zhipin (BOSS直聘) support. Official store links always point to the latest approved store release; preview availability is not evidence of store approval.
 
 Only this directory is eligible for website publication. Do not publish source harnesses, private cases, raw captures, internal reports or credentials. Existing historical film and archived packages are retained. Analytics behavior is unchanged.
 
